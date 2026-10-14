@@ -175,8 +175,7 @@
             
                 <div class="stat-item flex-fill text-center">
                     <div class="stat-number">
-                        <span class="count-up" data-countup="8">8</span>
-                        <span class="suffix">+</span>
+                        <span class="count-up" data-countup="8">8</span><span class="suffix">+</span>
                     </div>
                     <div class="stat-caption">Projects Done</div>
                 </div>
@@ -359,7 +358,611 @@
                 </div><!-- /row -->
             </div>
         </section>
+        
+
+        <!-- ============ Projects =============== -->
+        <section id="projects">
+            <div class="container-xl">
  
+                <div class="section-head">
+                    <span class="section-tag">03 &mdash; PORTFOLIO</span>
+                    <h2>Selected work</h2>
+                    <p>Six cards in a responsive grid. Filter pills on top, each card opens a detail modal.</p>
+                </div>
+ 
+                <!-- Filter pills -->
+                <div class="project-filters" role="group" aria-label="Filter projects">
+                    <button type="button" class="filter-pill active" data-filter="all" aria-pressed="true">All</button>
+                    <button type="button" class="filter-pill" data-filter="web-apps" aria-pressed="false">Web
+                        Apps</button>
+                    <button type="button" class="filter-pill" data-filter="landing" aria-pressed="false">Landing
+                        Pages</button>
+                    <button type="button" class="filter-pill" data-filter="dashboards"
+                        aria-pressed="false">Dashboards</button>
+                    <button type="button" class="filter-pill" data-filter="ecommerce"
+                        aria-pressed="false">E-commerce</button>
+                </div>
+ 
+                <!-- Cards -->
+                <div class="row g-4" id="projectGrid">
+ 
+                    <div class="col-md-6 col-lg-4 project-item" data-category="dashboards web-apps">
+                        <article class="project-card">
+                            <div class="project-thumb" role="img" aria-label="Finlytics Dashboard thumbnail">THUMB 16:10
+                            </div>
+                            <div class="project-body">
+                                <div class="project-tags"><span class="project-tag">Bootstrap</span><span
+                                        class="project-tag">SCSS</span></div>
+                                <h3 class="project-title">Finlytics Dashboard</h3>
+                                <p class="project-desc">Analytics UI with dark mode, data tables and a chart-heavy
+                                    overview screen.</p>
+                                <a href="#" class="project-link" data-bs-toggle="modal"
+                                    data-bs-target="#projectModal">View case study <span
+                                        aria-hidden="true">&rarr;</span></a>
+                            </div>
+                        </article>
+                    </div>
+ 
+                    <div class="col-md-6 col-lg-4 project-item" data-category="landing">
+                        <article class="project-card">
+                            <div class="project-thumb" role="img" aria-label="Wanderlust Travel thumbnail">THUMB 16:10
+                            </div>
+                            <div class="project-body">
+                                <div class="project-tags"><span class="project-tag">HTML</span><span
+                                        class="project-tag">CSS Grid</span></div>
+                                <h3 class="project-title">Wanderlust Travel</h3>
+                                <p class="project-desc">Landing page for a tour operator with a booking enquiry flow and
+                                    gallery.</p>
+                                <a href="#" class="project-link" data-bs-toggle="modal"
+                                    data-bs-target="#projectModal">View case study <span
+                                        aria-hidden="true">&rarr;</span></a>
+                            </div>
+                        </article>
+                    </div>
+ 
+                    <div class="col-md-6 col-lg-4 project-item" data-category="ecommerce">
+                        <article class="project-card">
+                            <div class="project-thumb" role="img" aria-label="Bloom Store thumbnail">THUMB 16:10</div>
+                            <div class="project-body">
+                                <div class="project-tags"><span class="project-tag">Bootstrap</span><span
+                                        class="project-tag">JS</span></div>
+                                <h3 class="project-title">Bloom Store</h3>
+                                <p class="project-desc">Product listing, quick-view modal and a sticky filter sidebar
+                                    for a florist.</p>
+                                <a href="#" class="project-link" data-bs-toggle="modal"
+                                    data-bs-target="#projectModal">View case study <span
+                                        aria-hidden="true">&rarr;</span></a>
+                            </div>
+                        </article>
+                    </div>
+ 
+                    <div class="col-md-6 col-lg-4 project-item" data-category="landing">
+                        <article class="project-card">
+                            <div class="project-thumb" role="img" aria-label="Northside Clinic thumbnail">THUMB 16:10
+                            </div>
+                            <div class="project-body">
+                                <div class="project-tags"><span class="project-tag">Flexbox</span><span
+                                        class="project-tag">SEO</span></div>
+                                <h3 class="project-title">Northside Clinic</h3>
+                                <p class="project-desc">Accessible multi-section site scoring 98 on Lighthouse for a
+                                    health clinic.</p>
+                                <a href="#" class="project-link" data-bs-toggle="modal"
+                                    data-bs-target="#projectModal">View case study <span
+                                        aria-hidden="true">&rarr;</span></a>
+                            </div>
+                        </article>
+                    </div>
+ 
+                    <div class="col-md-6 col-lg-4 project-item" data-category="landing">
+                        <article class="project-card">
+                            <div class="project-thumb" role="img" aria-label="Studio Nine thumbnail">THUMB 16:10</div>
+                            <div class="project-body">
+                                <div class="project-tags"><span class="project-tag">Bootstrap</span><span
+                                        class="project-tag">Carousel</span></div>
+                                <h3 class="project-title">Studio Nine</h3>
+                                <p class="project-desc">Agency one-pager with a testimonial slider and animated
+                                    statistics band.</p>
+                                <a href="#" class="project-link" data-bs-toggle="modal"
+                                    data-bs-target="#projectModal">View case study <span
+                                        aria-hidden="true">&rarr;</span></a>
+                            </div>
+                        </article>
+                    </div>
+ 
+                    <div class="col-md-6 col-lg-4 project-item" data-category="web-apps landing">
+                        <article class="project-card">
+                            <div class="project-thumb" role="img" aria-label="TaskPilot App thumbnail">THUMB 16:10</div>
+                            <div class="project-body">
+                                <div class="project-tags"><span class="project-tag">Media Queries</span><span
+                                        class="project-tag">CSS</span></div>
+                                <h3 class="project-title">TaskPilot App</h3>
+                                <p class="project-desc">Marketing site plus pricing table and FAQ accordion for a SaaS
+                                    product.</p>
+                                <a href="#" class="project-link" data-bs-toggle="modal"
+                                    data-bs-target="#projectModal">View case study <span
+                                        aria-hidden="true">&rarr;</span></a>
+                            </div>
+                        </article>
+                    </div>
+ 
+                    <!-- Extra cards, revealed by "Load more projects" -->
+                    <div class="col-md-6 col-lg-4 project-item is-extra d-none" data-category="web-apps">
+                        <article class="project-card">
+                            <div class="project-thumb" role="img" aria-label="Pulse Fitness thumbnail">THUMB 16:10</div>
+                            <div class="project-body">
+                                <div class="project-tags"><span class="project-tag">Bootstrap</span><span
+                                        class="project-tag">JS</span></div>
+                                <h3 class="project-title">Pulse Fitness</h3>
+                                <p class="project-desc">Workout tracker with progress charts and a weekly planner view.
+                                </p>
+                                <a href="#" class="project-link" data-bs-toggle="modal"
+                                    data-bs-target="#projectModal">View case study <span
+                                        aria-hidden="true">&rarr;</span></a>
+                            </div>
+                        </article>
+                    </div>
+ 
+                    <div class="col-md-6 col-lg-4 project-item is-extra d-none" data-category="ecommerce">
+                        <article class="project-card">
+                            <div class="project-thumb" role="img" aria-label="Brew and Co thumbnail">THUMB 16:10</div>
+                            <div class="project-body">
+                                <div class="project-tags"><span class="project-tag">Bootstrap</span><span
+                                        class="project-tag">Cart UI</span></div>
+                                <h3 class="project-title">Brew &amp; Co</h3>
+                                <p class="project-desc">Coffee shop storefront with a slide-in cart and product detail
+                                    pages.</p>
+                                <a href="#" class="project-link" data-bs-toggle="modal"
+                                    data-bs-target="#projectModal">View case study <span
+                                        aria-hidden="true">&rarr;</span></a>
+                            </div>
+                        </article>
+                    </div>
+ 
+                    <div class="col-md-6 col-lg-4 project-item is-extra d-none" data-category="dashboards">
+                        <article class="project-card">
+                            <div class="project-thumb" role="img" aria-label="Atlas Admin thumbnail">THUMB 16:10</div>
+                            <div class="project-body">
+                                <div class="project-tags"><span class="project-tag">SCSS</span><span
+                                        class="project-tag">Chart.js</span></div>
+                                <h3 class="project-title">Atlas Admin</h3>
+                                <p class="project-desc">Admin panel with a collapsible sidebar, KPI cards and sortable
+                                    tables.</p>
+                                <a href="#" class="project-link" data-bs-toggle="modal"
+                                    data-bs-target="#projectModal">View case study <span
+                                        aria-hidden="true">&rarr;</span></a>
+                            </div>
+                        </article>
+                    </div>
+ 
+                </div><!-- /row -->
+ 
+                <div class="text-center load-more-wrap" id="loadMoreWrap">
+                    <button type="button" class="btn btn-ghost" id="loadMoreBtn">Load more projects</button>
+                </div>
+ 
+            </div>
+        </section>
+ 
+        <!-- Project detail modal -->
+        <div class="modal fade" id="projectModal" tabindex="-1" aria-labelledby="projectModalTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content project-modal">
+ 
+                    <div class="modal-header">
+                        <h3 class="modal-title" id="projectModalTitle">Project title</h3>
+                        <button type="button" class="project-modal-close" data-bs-dismiss="modal" aria-label="Close">
+                            <i class="bi bi-x-lg" aria-hidden="true"></i>
+                        </button>
+                    </div>
+ 
+                    <div class="modal-body">
+                        <div class="modal-shot" role="img" aria-label="Project screenshot placeholder">SCREENSHOT 16:8
+                        </div>
+ 
+                        <div class="project-tags" id="modalTags"></div>
+                        <p class="modal-desc" id="modalDesc"></p>
+ 
+                        <div class="modal-meta">
+                            <div class="meta-tile">
+                                <span class="meta-label">Category</span>
+                                <span class="meta-value" id="modalCategory"></span>
+                            </div>
+                            <div class="meta-tile">
+                                <span class="meta-label">Year</span>
+                                <span class="meta-value">2025</span>
+                            </div>
+                            <div class="meta-tile">
+                                <span class="meta-label">Role</span>
+                                <span class="meta-value">Front-end</span>
+                            </div>
+                        </div>
+                    </div>
+ 
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-ghost" data-bs-dismiss="modal">Close</button>
+                        <a href="#" class="btn btn-primary" target="_blank" rel="noopener">Visit live site <span
+                                aria-hidden="true">&rarr;</span></a>
+                    </div>
+ 
+                </div>
+            </div>
+        </div>
+ 
+        <!-- ============ Testimonials =============== -->
+        <section id="testimonials">
+            <div class="container-xl">
+ 
+                <div class="section-head">
+                    <span class="section-tag">04 &mdash; TESTIMONIALS</span>
+                    <h2>Kind words from clients</h2>
+                </div>
+ 
+                <div id="testimonialCarousel" class="carousel slide testimonial-carousel"
+                    aria-roledescription="carousel" aria-label="Client testimonials">
+ 
+                    <div class="testimonial-stage">
+                        <div class="carousel-inner">
+ 
+                            <div class="carousel-item active">
+                                <figure class="testimonial-card">
+                                    <div class="t-stars" role="img" aria-label="5 out of 5 stars">
+                                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                            class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                            class="bi bi-star-fill"></i>
+                                    </div>
+                                    <blockquote class="t-quote">
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum, earum. Odio blanditiis ullam quas doloremque maxime. Quas repellat recusandae ullam laudantium mollitia ducimus, expedita commodi ad voluptates, porro adipisci animi.</p>
+                                    </blockquote>
+                                    <figcaption class="t-author">
+                                        <span class="t-avatar" aria-hidden="true"></span>
+                                        <span class="t-meta">
+                                            <span class="t-name">John Doe</span>
+                                            <span class="t-role">Director, Nirvana Lab</span>
+                                        </span>
+                                    </figcaption>
+                                </figure>
+                            </div>
+ 
+                            <div class="carousel-item">
+                                <figure class="testimonial-card">
+                                    <div class="t-stars" role="img" aria-label="5 out of 5 stars">
+                                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                            class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                            class="bi bi-star-fill"></i>
+                                    </div>
+                                    <blockquote class="t-quote">
+                                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis, pariatur. Necessitatibus repellat nisi eligendi laborum mollitia quis, delectus, non quibusdam rerum voluptatum ab quasi minus eos, in nam.</p>
+                                    </blockquote>
+                                    <figcaption class="t-author">
+                                        <span class="t-avatar" aria-hidden="true"></span>
+                                        <span class="t-meta">
+                                            <span class="t-name">Rohan Kumar</span>
+                                            <span class="t-role">Founder, Wanderlust</span>
+                                        </span>
+                                    </figcaption>
+                                </figure>
+                            </div>
+ 
+                            <div class="carousel-item">
+                                <figure class="testimonial-card">
+                                    <div class="t-stars" role="img" aria-label="5 out of 5 stars">
+                                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                            class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                            class="bi bi-star-fill"></i>
+                                    </div>
+                                    <blockquote class="t-quote">
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam labore autem facilis repellat reiciendis odio, quo eligendi omnis perspiciatis nam.</p>
+                                    </blockquote>
+                                    <figcaption class="t-author">
+                                        <span class="t-avatar" aria-hidden="true"></span>
+                                        <span class="t-meta">
+                                            <span class="t-name">Smith</span>
+                                            <span class="t-role">Director, Nirvana Lab</span>
+                                        </span>
+                                    </figcaption>
+                                </figure>
+                            </div>
+ 
+                            <div class="carousel-item">
+                                <figure class="testimonial-card">
+                                    <div class="t-stars" role="img" aria-label="5 out of 5 stars">
+                                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                            class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                            class="bi bi-star-fill"></i>
+                                    </div>
+                                    <blockquote class="t-quote">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur libero dicta sequi sunt quisquam porro officiis molestias sapiente quae.
+                                        </p>
+                                    </blockquote>
+                                    <figcaption class="t-author">
+                                        <span class="t-avatar" aria-hidden="true"></span>
+                                        <span class="t-meta">
+                                            <span class="t-name">John</span>
+                                            <span class="t-role">Director, HCL</span>
+                                        </span>
+                                    </figcaption>
+                                </figure>
+                            </div>
+ 
+                        </div><!-- /carousel-inner -->
+ 
+                        <!-- Arrows -->
+                        <button class="carousel-control-prev t-arrow" type="button"
+                            data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                            <i class="bi bi-chevron-left" aria-hidden="true"></i>
+                            <span class="visually-hidden">Previous testimonial</span>
+                        </button>
+                        <button class="carousel-control-next t-arrow" type="button"
+                            data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                            <i class="bi bi-chevron-right" aria-hidden="true"></i>
+                            <span class="visually-hidden">Next testimonial</span>
+                        </button>
+                    </div><!-- /stage -->
+ 
+                    <!-- Dots -->
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Testimonial 1"></button>
+                        <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1"
+                            aria-label="Testimonial 2"></button>
+                        <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="2"
+                            aria-label="Testimonial 3"></button>
+                        <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="3"
+                            aria-label="Testimonial 4"></button>
+                    </div>
+ 
+                </div>
+            </div>
+        </section>
+ 
+        <!-- ============ Contact =============== -->
+        <section id="contact">
+            <div class="container-xl">
+ 
+                <div class="section-head">
+                    <span class="section-tag">05 &mdash; CONTACT</span>
+                    <h2>Let's build something together</h2>
+                    <p>Tell me about the project and I'll reply within one working day.</p>
+                </div>
+ 
+                <div class="row g-4 g-lg-5 align-items-start">
+ 
+                    <!-- Left: form -->
+                    <div class="col-lg-6">
+                        <form class="contact-card" id="contactForm" novalidate>
+ 
+                            <div class="row g-3">
+                                <div class="col-sm-6">
+                                    <label for="cf-name" class="form-label">Full name</label>
+                                    <input type="text" class="form-control" id="cf-name" name="name" placeholder=""
+                                        required autocomplete="name">
+                                    <div class="invalid-feedback">Please enter your name.</div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <label for="cf-email" class="form-label">Email address</label>
+                                    <input type="email" class="form-control" id="cf-email" name="email" placeholder=""
+                                        required autocomplete="email">
+                                    <div class="invalid-feedback">Please enter a valid email.</div>
+                                </div>
+ 
+                                <div class="col-sm-6">
+                                    <label for="cf-phone" class="form-label">Phone</label>
+                                    <input type="tel" class="form-control" id="cf-phone" name="phone" placeholder=""
+                                        autocomplete="tel">
+                                </div>
+                                <div class="col-sm-6">
+                                    <label for="cf-budget" class="form-label">Budget range</label>
+                                    <select class="form-select" id="cf-budget" name="budget" required>
+                                        <option value="" selected disabled>Select a range</option>
+                                        <option>Under ₹25,000</option>
+                                        <option>₹25,000 – ₹75,000</option>
+                                        <option>₹75,000 – ₹1,50,000</option>
+                                        <option>₹1,50,000+</option>
+                                    </select>
+                                    <div class="invalid-feedback">Please choose a budget.</div>
+                                </div>
+ 
+                                <div class="col-12">
+                                    <label for="cf-type" class="form-label">Project type</label>
+                                    <input type="text" class="form-control" id="cf-type" name="type" placeholder="">
+                                </div>
+ 
+                                <div class="col-12">
+                                    <label for="cf-message" class="form-label">Message</label>
+                                    <textarea class="form-control" id="cf-message" name="message" rows="5"
+                                        placeholder="A few lines about what you need..." required></textarea>
+                                    <div class="invalid-feedback">Please tell me a little about the project.</div>
+                                </div>
+ 
+                                <div class="col-12">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="cf-consent" required>
+                                        <label class="form-check-label" for="cf-consent">
+                                            I agree to be contacted about this enquiry and have read the
+                                            <a href="#">privacy policy</a>.
+                                        </label>
+                                        <div class="invalid-feedback">Please tick the box to continue.</div>
+                                    </div>
+                                </div>
+                            </div>
+ 
+                            <button type="submit" class="btn btn-primary send-btn" id="sendBtn">
+                                Send message <span aria-hidden="true">&rarr;</span>
+                            </button>
+ 
+                            <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+                        </form>
+                    </div>
+ 
+                    <!-- Right: info cards + FAQ -->
+                    <div class="col-lg-6">
+ 
+                        <div class="info-card">
+                            <div class="info-icon"><i class="bi bi-envelope" aria-hidden="true"></i></div>
+                            <div>
+                                <div class="info-title">hello@shrutjaiswal.dev</div>
+                                <div class="info-sub">Email &mdash; replies within 8h</div>
+                            </div>
+                        </div>
+ 
+                        <div class="info-card">
+                            <div class="info-icon"><i class="bi bi-telephone-fill" aria-hidden="true"></i></div>
+                            <div>
+                                <div class="info-title">+91 00000 000000</div>
+                                <div class="info-sub">Mon&ndash;Fri, 10:00&ndash;19:00 IST</div>
+                            </div>
+                        </div>
+ 
+                        <div class="info-card">
+                            <div class="info-icon"><i class="bi bi-geo-alt" aria-hidden="true"></i></div>
+                            <div>
+                                <div class="info-title">Lucknow, India</div>
+                                <div class="info-sub">Working remotely worldwide</div>
+                            </div>
+                        </div>
+ 
+                        <h3 class="faq-heading">Frequently asked</h3>
+ 
+                        <div class="accordion faq-accordion" id="faqAccordion">
+ 
+                            <div class="accordion-item">
+                                <h4 class="accordion-header">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#faq1" aria-expanded="true" aria-controls="faq1">
+                                        Lorem ipsum dolor sit amet consectetur?
+                                    </button>
+                                </h4>
+                                <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium et reiciendis vero possimus sequi.
+                                    </div>
+                                </div>
+                            </div>
+ 
+                            <div class="accordion-item">
+                                <h4 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#faq2" aria-expanded="false" aria-controls="faq2">
+                                        Lorem ipsum dolor sit amet consectetur?
+                                    </button>
+                                </h4>
+                                <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium et reiciendis vero possimus sequi.
+                                    </div>
+                                </div>
+                            </div>
+ 
+                            <div class="accordion-item">
+                                <h4 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#faq3" aria-expanded="false" aria-controls="faq3">
+                                        Lorem ipsum dolor sit amet consectetur?
+                                    </button>
+                                </h4>
+                                <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium et reiciendis vero possimus sequi.
+                                    </div>
+                                </div>
+                            </div>
+ 
+                            <div class="accordion-item">
+                                <h4 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#faq4" aria-expanded="false" aria-controls="faq4">
+                                        Lorem ipsum dolor sit amet consectetur?
+                                    </button>
+                                </h4>
+                                <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium et reiciendis vero possimus sequi.
+                                    </div>
+                                </div>
+                            </div>
+ 
+                        </div>
+                    </div>
+ 
+                </div>
+            </div>
+        </section>
+ 
+        <!-- ============ Footer =============== -->
+        <footer id="site-footer">
+            <div class="container-xl">
+ 
+                <div class="footer-grid">
+ 
+                    <!-- Brand -->
+                    <div class="footer-brand">
+                        <a href="#hero" class="footer-logo" aria-label="Shruti, back to top">
+                            <span class="footer-logo-mark" aria-hidden="true">SJ</span>
+                            Shruti<span class="footer-dot">.</span>
+                        </a>
+                        <p class="footer-about">
+                            Front-end developer building quick, accessible and search-friendly
+                            websites.
+                        </p>
+                    </div>
+ 
+                    <!-- Navigate -->
+                    <nav class="footer-col" aria-labelledby="footNavTitle">
+                        <h2 class="footer-title" id="footNavTitle">Navigate</h2>
+                        <ul class="footer-links">
+                            <li><a href="#hero">Home</a></li>
+                            <li><a href="#stats">About</a></li>
+                            <li><a href="#skills">Skills</a></li>
+                            <li><a href="#projects">Projects</a></li>
+                        </ul>
+                    </nav>
+ 
+                    <!-- Services -->
+                    <div class="footer-col">
+                        <h2 class="footer-title" id="footServTitle">Services</h2>
+                        <ul class="footer-links" aria-labelledby="footServTitle">
+                            <li><a href="#contact">Landing pages</a></li>
+                            <li><a href="#contact">Bootstrap builds</a></li>
+                            <li><a href="#contact">Responsive fixes</a></li>
+                            <li><a href="#contact">SEO audits</a></li>
+                        </ul>
+                    </div>
+ 
+                    <!-- Stay in touch -->
+                    <div class="footer-col">
+                        <h2 class="footer-title" id="footTouchTitle">Stay in touch</h2>
+ 
+                        <form class="footer-news" id="newsForm" novalidate>
+                            <label for="newsEmail" class="visually-hidden">Email address</label>
+                            <input type="email" id="newsEmail" name="email" class="footer-input"
+                                placeholder="Your email address" autocomplete="email" required>
+                            <button type="submit" class="footer-join">Join</button>
+                        </form>
+                        <p class="footer-news-status" id="newsStatus" role="status" aria-live="polite"></p>
+ 
+                        <ul class="footer-social" aria-label="Social links">
+                            <li><a href="#" aria-label="LinkedIn">in</a></li>
+                            <li><a href="#" aria-label="GitHub">gh</a></li>
+                            <li><a href="#" aria-label="X (Twitter)">x</a></li>
+                            <li><a href="#" aria-label="Behance">be</a></li>
+                        </ul>
+                    </div>
+ 
+                </div>
+ 
+                <!-- Bottom bar -->
+                <div class="footer-bottom">
+                    <p class="footer-copy">&copy; <span id="footYear">2026</span> Shruti Jaiswal. All rights reserved.
+                    </p>
+                    <ul class="footer-legal">
+                        <li><a href="#">Privacy</a></li>
+                        <li><a href="#">Terms</a></li>
+                        <li><a href="#">Sitemap</a></li>
+                    </ul>
+                </div>
+ 
+            </div>
+        </footer>
 
     </main>
         
