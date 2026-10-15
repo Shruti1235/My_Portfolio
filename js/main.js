@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const legendItems = document.querySelectorAll('.legend-item');
 
   const labels = ['Markup', 'Styling', 'Scripting', 'Testing'];
-  const values = [40, 26, 20, 14];
+  const values = [36, 24, 40, 10];
   let chart = null;
 
   const setCentre = (i) => {

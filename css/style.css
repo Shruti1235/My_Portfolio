@@ -598,7 +598,9 @@ section {
   letter-spacing: -.04em;
 }
  
-.stat-number .suffix { color: var(--accent); }
+.stat-number .suffix { 
+  color: var(--accent);
+}
  
 .stat-caption {
   margin-top: 10px;
