@@ -1256,8 +1256,12 @@ section {
   transition: color .2s ease, box-shadow .2s ease;
 }
  
-.testimonial-carousel .carousel-control-prev { left: -161px; }
-.testimonial-carousel .carousel-control-next { right: -161px; }
+.testimonial-carousel .carousel-control-prev { 
+  left: -161px; 
+}
+.testimonial-carousel .carousel-control-next { 
+  right: -161px; 
+}
  
 .testimonial-carousel .t-arrow:focus {
   color: var(--heading);
@@ -1290,9 +1294,9 @@ section {
   margin: 0;
   padding: 0;
   border: 0;
-  border-top: 8px solid transparent;      /* bigger tap area, same visual size */
-  border-bottom: 8px solid transparent;
-  border-radius: var(--r-pill);
+  border-top: 1px solid transparent;      /* bigger tap area, same visual size */
+  border-bottom: 1px solid transparent;
+  border-radius: var(--r-sm);
   background-color: #CBD5E1;
   background-clip: padding-box;
   opacity: 1;
@@ -1301,7 +1305,7 @@ section {
 }
  
 .testimonial-carousel .carousel-indicators .active {
-  width: 26px;
+  width: 8px;
   background-color: var(--primary);
 }
  
@@ -1369,7 +1373,7 @@ section {
 }
  
 .contact-card .form-label {
-    font-family: 'Sora', sans-serif;
+    font-family: var(--ff-head);
     font-size: .75rem;
     font-weight: 600;
     color: var(--ink, #0F172A);
@@ -1465,7 +1469,7 @@ section {
     margin-top: 22px;
     padding: 12px 24px;
     border-radius: 999px;
-    font-family: 'Sora', sans-serif;
+    font-family: var(--ff-head);
     font-size: .8125rem;
     font-weight: 600;
     box-shadow: 0 10px 24px rgba(79, 70, 229, .35);
